@@ -66,7 +66,7 @@ export const Contact = () => {
     }, [height]);
 
   return (
-    <section className='w-full lg:w-[70%] flex flex-col py-10 bg-cyan-950 px-[60px]'>
+    <section className='w-full lg:w-[70%] flex flex-col py-10 bg-cyan-950 px-[10px] md:px-[10px] lg:px-[10px]'>
        <Header showContent={showContent} showAfter={showAfter} beforeContent={"before:content-['Contact_Me']"} beforeNum={"before:content-['0.5']"} num={"0.5"} content={"Contact Me"}/>
        <div className='w-full flex flex-col'>
        {/* <Symbol/> */}

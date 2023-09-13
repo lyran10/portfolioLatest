@@ -66,7 +66,7 @@ export const Projects = () => {
     }
  
   return (
-    <section className='w-full lg:w-[70%] py-10 bg-cyan-950 px-[60px] mb-[80px]'>
+    <section className='w-full lg:w-[70%] py-10 bg-cyan-950 px-[10px] md:px-[10px] lg:px-[10px] mb-[80px]'>
        <Header showContent={showContent} showAfter={showAfter} beforeContent={"before:content-['Projects']"} beforeNum={"before:content-['0.4']"} num={"0.4"} content={"Projects"}/>
       
        <div className='flex mt-3 flex-wrap gap-10 flex-col items-center w-full'>

@@ -84,7 +84,7 @@ export const About = () => {
       },[])
 
   return (
-    <div className={`aboutMe w-full lg:w-[70%] py-10 px-[60px] bg-cyan-950 text-white mb-[80px]`}>
+    <div className={`aboutMe w-full lg:w-[70%] py-10 px-[10px] md:px-[10px] lg:px-[10px] bg-cyan-950 text-white mb-[80px]`}>
          <Header showContent={showContent} showAfter={showAfter} beforeContent={"before:content-['About_me']"} beforeNum={"before:content-['0.1']"} num={"0.1"} content={"About me"}/>
          <Image opacity={opacity} intersection={intersection}/>
       <div className=''>
