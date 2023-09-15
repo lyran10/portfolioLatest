@@ -66,10 +66,10 @@ export const Contact = () => {
     }, [height]);
 
   return (
-    <section className='w-full lg:w-[70%] flex flex-col py-10 bg-cyan-950 px-[10px] md:px-[10px] lg:px-[10px]'>
+    <section id="contact" className='w-full lg:w-[70%] flex flex-col py-10 bg-cyan-950 px-[10px] md:px-[60px] lg:px-[60px]'>
        <Header showContent={showContent} showAfter={showAfter} beforeContent={"before:content-['Contact_Me']"} beforeNum={"before:content-['0.5']"} num={"0.5"} content={"Contact Me"}/>
        <div className='w-full flex flex-col'>
-       {/* <Symbol/> */}
+       <Symbol/>
        <div className='w-full mt-10 gap-10 flex flex-col md:flex-row lg:flex-row'>
        <div className='w-full md:w-[50%] lg:w-[50%] flex justify-start gap-3 flex-col items-start'>
        <span className={`relative text-[#f5f5f5] text-[20px] md:text-[15px] lg:text-[15px] ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } duration-500 ${showAfter ? "after:opacity-1" : "after:opacity-0" } before:absolute before:right-0 before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] before:content-["Feel_free_to_get_in_touch_if_you_have_any_questions._I'd_love_to_hear_from_you!"] before:w-full before:h-full before:text-[20px] md:before:text-[15px] lg:before:text-[15px]`} ><span className='invisible'>Feel free to get in touch if you have any questions. I'd love to hear from you!</span></span>

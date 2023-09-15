@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import {FaStarOfDavid} from "react-icons/fa"
+import symbol from "../navbar/symbol.png"
 
 export const Symbol = () => {
     const [intersection,setIntersection] = useState<number>(0)
@@ -30,11 +31,13 @@ export const Symbol = () => {
         return () => window.removeEventListener('scroll', scroll);
       },[])
   return (
-    <div className='flex justify-center items-center w-full lg:w-[70%]'>
-    <div className='m-auto hidden md:flex lg:flex justify-center mb-[80px] h-[100px] items-center'>
-         <div className='positive relative mr-5 text-[#f5f5f5] text-[30px] duration-500 py-1 px-2 before:absolute before:content-"" before:h-[1px] before:w-[50%] before:bg-[#526D82] before:right-[110%] before:top-[55%]'>Ever Positive</div>
-         <div className='symbol overflow-hidden rounded-full w-[100px] h-[100px] relative before:duration-500 before:absolute before:content-"" before:bg-cyan-500 before:w-full before:h-full before:rounded-full'></div>
-        <div className='negative relative ml-5 text-[#f5f5f5] text-[30px] duration-500 py-1 px-2 before:absolute before:content-"" before:h-[1px] before:w-[50%] before:bg-[#526D82] before:left-[110%] before:top-[55%]'>Never Negative</div>
+    <div className='flex justify-center items-center w-full lg:w-[100%]'>
+    <div className='m-auto text-[10px] flex justify-center h-[100px] items-center'>
+         <div className='positive  relative mr-5 text-[#f5f5f5] text-[17px] md:text-[30px] lg:text-[30px] duration-500 py-1 px-2 before:absolute before:content-"" before:h-[1px] before:w-[50%] before:bg-[#526D82] before:right-[110%] before:top-[55%] '>Ever Positive</div>
+         <div className='symbol w-[100px] h-[100px]'>
+          <img className='w-full h-full rounded-full' src={symbol} alt="" />
+         </div>
+        <div className='negative relative ml-5 text-[#f5f5f5] duration-500 py-1 px-2 before:absolute before:content-"" before:h-[1px] before:w-[50%] before:bg-[#526D82] before:left-[110%] before:top-[55%] text-[17px] md:text-[30px] lg:text-[30px]'>Never Negative</div>
     </div>
     </div>
   )

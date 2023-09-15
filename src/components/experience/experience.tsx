@@ -139,7 +139,7 @@ export const Experience = () => {
     }
  
   return (
-    <section className='experience w-full lg:w-[70%] py-10 bg-cyan-950 px-[10px] md:px-[10px] lg:px-[10px] mb-[80px]'>
+    <section id="experience" className='experience w-full lg:w-[70%] py-10 bg-cyan-950 px-[10px] md:px-[60px] lg:px-[60px] mb-[30px]'>
        <Header showContent={showContent} showAfter={showAfter} beforeContent={"before:content-['Experience']"} beforeNum={"before:content-['0.2']"} num={"0.2"} content={"Experience"}/>
        <div className={`flex gap-5 flex-col items-center ${showContent ? "opacity-1" : "opacity-0"} duration-500 md:items-start lg:items-start mt-5 relative`}>
        {/* ${loading.exp1 ? "animate-[exp_1s_cubic-bezier(.95,.36,.11,.65)_1] after:animate-[wiggle1_1s_cubic-bezier(.95,.36,.11,.65)_1] after:right-0" :"after:right-[100%]"} */}

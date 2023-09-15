@@ -97,7 +97,7 @@ export const Education = () => {
     }
  
   return (
-    <section className='w-full lg:w-[70%] py-10 bg-cyan-950 px-[10px] md:px-[10px] lg:px-[10px] mb-[80px]'>
+    <section id="education" className='w-full lg:w-[70%] py-10 bg-cyan-950 px-[10px] md:px-[60px] lg:px-[60px] mb-[30px]'>
        <Header showContent={showContent} showAfter={showAfter} beforeContent={"before:content-['Education']"} beforeNum={"before:content-['0.3']"} num={"0.3"} content={"Education"}/>
        <div className={`flex gap-5 md:gap-5  lg:gap-5  justify-center  md:justify-around   lg:justify-around items-center flex-wrap mt-5 relative education`}>
        {/* ${loading.exp1 ? "animate-[exp_1s_cubic-bezier(.95,.36,.11,.65)_1] after:animate-[wiggle1_1s_cubic-bezier(.95,.36,.11,.65)_1] after:right-0" :"after:right-[100%]"} */}

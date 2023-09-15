@@ -25,7 +25,7 @@ export const Main = () => {
       <Experience/>
       <Education/>
       <Projects/>
-      <Symbol/>
+      {/* <Symbol/> */}
       <Contact/>
       <Linebar/>
     </main>
