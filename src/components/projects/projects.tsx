@@ -73,7 +73,7 @@ export const Projects = () => {
        {
         projects.map((pro,index) => {
             return(
-              <div className={`relative w-full gap-5 lg:gap-0 md:gap-0 flex-col md:flex-row lg:flex-row flex justify-center items-center before:content-"" before:absolute before:w-[30%] mt-5 md:mt-0 lg:mt-0 before:lg:w-[0%] before:md:w-[0%] before:h-[1px] before:bg-[#526D82] before:top-[110%] before:left-0`}>
+              <div className={`relative rounded-md w-full py-5 gap-5 lg:gap-0 md:gap-0 flex-col md:flex-row lg:flex-row flex justify-center items-center before:content-"" before:absolute before:w-[30%] mt-5 md:mt-0 lg:mt-0 before:lg:w-[0%] before:md:w-[0%] before:h-[1px] before:bg-[#526D82] before:top-[110%] before:left-0`}>
                 <div className='w-[100%] md:w-[50%] lg:w-[50%] px-0 md:px-5 lg:px-5 h-full flex justify-center items-center text-[#f5f5f5]'>
                   <div className='w-full flex flex-col gap-3'>
                   <span className={`relative ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } duration-500 ${showAfter ? "after:opacity-1" : "after:opacity-0" } before:absolute before:right-0 before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${pro.beforeProject} before:font-bold before:w-full before:h-full`} ><span className='invisible'>{pro.project}</span></span>
@@ -88,8 +88,8 @@ export const Projects = () => {
                   </div>
                 
                 </div>
-                <div className='w-[100%] md:w-[50%] lg:w-[50%] overflow-hidden h-full flex justify-center items-center bg-center bg-cover bg-no-repeat'>
-                  <img className={`duration-500 ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${showContent ? "translate-y-0" : "translate-y-[250px]"}`} src={pro.image} alt="" />
+                <div className='w-[100%] md:w-[50%] lg:w-[50%] duration-500 hover:scale-150 px-2 overflow-hidden h-full flex justify-center items-center bg-center bg-cover bg-no-repeat'>
+                  <img className={`duration-500 ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${showContent ? "translate-y-0" : "translate-y-[250px] h-full"}`} src={pro.image} alt="" />
                 </div>
               </div>
             )

@@ -215,9 +215,9 @@ export const Skills = ({showContent,showAfter} : Props) => {
         {/* overflow-hidden hover:before:animate-[wiggle_0.6s_cubic-bezier(.95,.36,.11,.65)_1] hover:after:animate-[wiggle1_0.6s_cubic-bezier(.95,.36,.11,.65)_1] relative hover:before:right-0 before:duration-200 before:content-"" before:absolute before:w-full before:h-full before:right-[100%] before:top-0 after:top-0 hover:after:right-0 after:duration-500 after:content-"" after:absolute after:w-full after:h-full after:right-[100%] */}
             {skills.map((skill,index) => {
                     return(
-                        <div key={index} className='flex justify-center overflow-hidden z-[1] py-2 px-2 flex-col group md:flex-row lg:flex-row items-center h-full w-full gap-3 relative after:absolute after:content-"" after:bg-cyan-500 after:w-full after:h-full after:z-[-1] hover:after:right-0 after:right-[100%] after:duration-500'>
+                        <div key={index} className='flex justify-center overflow-hidden z-[1] py-2 px-2 flex-col group md:flex-row lg:flex-row items-center h-full w-full gap-3 '>
                             <div className='w-full h-full md:w-[30%] lg:w-[20%] flex justify-start items-start'>
-                                <div className={`flex flex-col w-full md:w-[50%] lg:w-[50%] ${showContent ? "opacity-1 translate-y-0" : "opacity-0 translate-y-10"} duration-500`}>
+                                <div className={`flex flex-col text-cyan-500 w-full md:w-[50%] lg:w-[50%] ${showContent ? "opacity-1 translate-y-0" : "opacity-0 translate-y-10"} duration-500`}>
                                 {skill.icon}
                                 <span>{skill.id}</span>
                                 </div>

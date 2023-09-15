@@ -148,8 +148,8 @@ export const Experience = () => {
         let background = `${exp.background}` as keyof {back1 : boolean,back2 : boolean,back3 : boolean}
         return(
           <>
-          <div className={`cardExp flex gap-3 relative flex-col w-full md:w-[350px] lg:w-[350px] text-[#f5f5f5]  bg-[rgba(6,182,212,.18)] px-3 py-5  duration-500 `}>
-             <span className={`absolute bottom-[95%] bg-[#f5f5f5] px-2 text-cyan-500 ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } before:bottom-[95%]  duration-500 before:text-center  before:absolute before:left-0  before:duration-500before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${exp.beforeRole} before:font-bold before:w-full before:h-full`} ><span className='invisible'>{exp.role}</span></span>
+          <div className={`cardExp flex gap-3 relative flex-col w-full md:w-[350px] lg:w-[350px] text-cyan-950  bg-[#f5f5f5] px-3 py-5  duration-500 `}>
+             <span className={`absolute bottom-[95%] bg-cyan-950 px-2 text-cyan-500 ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } before:bottom-[95%]  duration-500 before:text-center  before:absolute before:left-0  before:duration-500before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${exp.beforeRole} before:font-bold before:w-full before:h-full`} ><span className='invisible'>{exp.role}</span></span>
           <div className='flex flex-col relative mt-3 gap-1'>
            <span className={`relative ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } duration-500 ${showAfter ? "after:opacity-1" : "after:opacity-0" } before:absolute before:right-0 before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${exp.beforeDate} before:font-bold before:w-full before:h-full`} ><span className='invisible'>{exp.date}</span></span>
            <div className='hidden lg:absolute md:absolute md:flex lg:flex md:w-[110%] lg:w-[150%] text-[#f5f5f5] h-[200px] left-[105%] top-[50%] px-3 py-1 flex-col'>

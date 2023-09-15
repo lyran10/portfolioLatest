@@ -106,12 +106,12 @@ export const Education = () => {
         // let background = `${exp.background}` as keyof {back1 : boolean,back2 : boolean,back3 : boolean}
         return(
           <div onMouseMove={(e) => mouseMove(e,edu)} style={{transform : `rotateX(${edu.card.y}deg) rotateY(${edu.card.x}deg)`}} onMouseLeave={mouseLeave} className={`w-[300px] h-[300px] eduCard bg-[rgba(6,182,212,.18)] text-[#f5f5f5] ${showContent ? "opacity-1 translate-y-0"  : "opacity-0 translate-y-10" } duration-500 relative`}>
-           <div className='absolute w-full h-full flex flex-col  gap-3 border border-cyan-500 bg-cyan-950 top-2 right-2'>
+           <div className='absolute w-full h-full flex flex-col  gap-3 border border-cyan-500 bg-[#f5f5f5] top-2 right-2'>
             <div className='h-[20%] relative mb-3 w-full bg-cyan-500 '>
-            <span className={` absolute top-[85%] right-1 bg-[#f5f5f5] px-2 text-center text-cyan-500  ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } duration-500 ${showAfter ? "after:opacity-1" : "after:opacity-0" } before:absolute before:right-0 before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${edu.beforeDate} before:font-bold before:w-full before:h-full`} ><span className='invisible'>{edu.date}</span></span>
+            <span className={` absolute top-[85%] right-1 bg-cyan-950 px-2 text-center text-cyan-500  ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } duration-500 ${showAfter ? "after:opacity-1" : "after:opacity-0" } before:absolute before:right-0 before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${edu.beforeDate} before:font-bold before:w-full before:h-full`} ><span className='invisible'>{edu.date}</span></span>
             </div>
-            <div className='flex flex-col justify-start items-start w-[90%] m-auto gap-3'>
-              <div className='w-[50px] h-[50px] rounded-full bg-[rgba(6,182,212,.18)] flex justify-center items-center'>
+            <div className='flex flex-col text-cyan-950 justify-start items-start w-[90%] m-auto gap-3'>
+              <div className='w-[50px] h-[50px] rounded-full bg-cyan-950 text-cyan-500 flex justify-center items-center'>
               {edu.icon}
               </div>
             <span className={` relative ${showContent ? "before:top-0 before:opacity-1"  : "before:top-[100%] before:opacity-0" } duration-500 ${showAfter ? "after:opacity-1" : "after:opacity-0" } before:absolute before:right-0 before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${edu.beforeDegree} before:w-full before:h-full`} ><span className='invisible'>{edu.degree}</span></span>
