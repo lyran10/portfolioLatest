@@ -88,7 +88,7 @@ export const Projects = () => {
                   </div>
                 
                 </div>
-                <div className='w-[100%] md:w-[50%] lg:w-[50%] duration-500 hover:scale-150 px-2 overflow-hidden h-full flex justify-center items-center bg-center bg-cover bg-no-repeat'>
+                <div className='w-[100%] md:w-[50%] lg:w-[50%] duration-500 h-full flex justify-center items-center bg-center bg-cover bg-no-repeat'>
                   <img className={`duration-500 ease-[cubic-bezier(.52,-0.32,.39,1.49)] ${showContent ? "translate-y-0" : "translate-y-[250px] h-full"}`} src={pro.image} alt="" />
                 </div>
               </div>

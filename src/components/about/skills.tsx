@@ -209,7 +209,7 @@ export const Skills = ({showContent,showAfter} : Props) => {
         <div className={`w-full`}>
         {/* <span className=' font-semibold mb-3'>what I've worked with</span> */}
         <div className='flex text-white'>
-        <span className={`relative ${showContent ? "before:top-0 before:opacity-1" : "before:top-[100%] invisible before:opacity-0"} duration-500 before:absolute before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] before:content-["Skills"] before:text-white before:w-full before:h-full after:absolute after:content-"" after:bg-cyan-500 after:w-full after:h-[1px] after:top-[100%] after:left-0`}><span className='invisible text-[20px]'>Skills</span></span>
+        <span className={`relative ${showContent ? "before:top-0 before:opacity-1" : "before:top-[100%] invisible before:opacity-0"} duration-500 before:absolute before:duration-500 before:ease-[cubic-bezier(.52,-0.32,.39,1.49)] before:content-["Skills"] before:text-white before:flex before:justify-center before:items-center before:w-full before:h-full after:absolute after:content-"" after:bg-cyan-500 after:w-full after:h-[1px] after:top-[100%] after:left-0`}><span className='invisible text-[20px]'>Skills</span></span>
         </div>
         <div className={`flex flex-wrap w-full gap-8 md:gap-5 lg:gap-5 justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start mt-3`}>
         {/* overflow-hidden hover:before:animate-[wiggle_0.6s_cubic-bezier(.95,.36,.11,.65)_1] hover:after:animate-[wiggle1_0.6s_cubic-bezier(.95,.36,.11,.65)_1] relative hover:before:right-0 before:duration-200 before:content-"" before:absolute before:w-full before:h-full before:right-[100%] before:top-0 after:top-0 hover:after:right-0 after:duration-500 after:content-"" after:absolute after:w-full after:h-full after:right-[100%] */}
@@ -221,7 +221,7 @@ export const Skills = ({showContent,showAfter} : Props) => {
                                 {skill.icon}
                                 <span>{skill.id}</span>
                                 </div>
-                                <BsArrowRight className='m-auto hidden md:flex lg:flex text-center cursor-pointer -translate-x-5 opacity-0 group-hover:opacity-[1] group-hover:translate-x-0 duration-500'/>
+                                <BsArrowRight className='m-auto hidden md:flex lg:flex text-center -translate-x-5 opacity-0 group-hover:opacity-[1] group-hover:translate-x-0 duration-500'/>
                                 </div>
                             <div className='w-full md:w-[70%] lg:w-[80%] flex justify-start items-start flex-wrap gap-3'>
                                 {

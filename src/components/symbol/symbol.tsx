@@ -13,7 +13,6 @@ export const Symbol = () => {
             const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
             const scrollPosition = window.scrollY;
             const scale = (scrollPosition / totalHeight) * 100;
-            console.log(Math.min(100, Math.max(1, scale)))
             if(Math.round(Math.min(100, Math.max(1, scale))) > 60){
                 document.documentElement.style.setProperty('--symbol', `${Math.round(Math.min(100, Math.max(1, scale)))}`);
             }

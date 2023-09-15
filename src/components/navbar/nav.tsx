@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { Button } from './button'
 import { Sidebar } from './sidebar';
 import { ContextState } from '../../context/context'
@@ -9,6 +9,7 @@ import symbol from "./symbol.png"
 export const Nav = () => {
   const {showItems,setShowItems,arrow,setArrow} = ContextState() as Context;
   const [sideNav,setSideNav] = useState<string>("-translate-x-[2000px]")
+  const [showNav,setShowNav] = useState<string>("translate-y-0")
 const list = [
   {
   id : "Home",
@@ -42,6 +43,31 @@ const list = [
 },
 ,]
 
+const [prev, setPrev] = useState<number>(0);
+
+// Function to handle scroll event
+const handleScroll = () => {
+  if (window.scrollY < prev) {
+      console.log("up")
+      setShowNav("translate-y-0")
+  }
+  else {
+      console.log("down")
+      setShowNav("-translate-y-[100px]")
+  }
+  setPrev(window.scrollY)
+};
+
+useEffect(() => {
+  // Attach the scroll event listener when the component mounts
+  window.addEventListener('scroll', handleScroll);
+
+  // Clean up the event listener when the component unmounts
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, [prev]);
+
 const handleNav = () => {
   if(arrow.arrow1 === "-translate-y-2"){
     setArrow({arrow1 : "-rotate-[33deg] -translate-y-2",arrow2 : "rotate-[90deg] translate-x-[14px] w-[36px]",arrow3 : "rotate-[33deg] translate-y-2"})
@@ -63,7 +89,7 @@ const handleSideNav = () => {
 }
 // ${arrow.arrow1 === "-rotate-[33deg] -translate-y-2" ? "bg-cyan-950":"bg-transparent"}
   return (
-    <nav style={{fontFamily :"Montserrat"}} className={`h-[80px] top-0 w-full fixed z-[2000] flex justify-between duration-500 items-center bg-cyan-950`}>
+    <nav style={{fontFamily :"Montserrat"}} className={`h-[80px] ${showNav} top-0 w-full fixed z-[2000] flex justify-between duration-500 items-center bg-cyan-950`}>
       <div className='text-cyan-500 ml-10 text-[20px] w-[60px] h-[60px] flex justify-center items-center rounded-full'>
         <img className='w-[60px] h-[60px] rounded-full' src={symbol} alt="" />
       </div>

@@ -86,15 +86,13 @@ export const About = () => {
   return (
     <section id="about" className={`aboutMe w-full lg:w-[70%] py-10 px-[10px] md:px-[60px] lg:px-[60px] bg-cyan-950 text-white mb-[30px]`}>
          <Header showContent={showContent} showAfter={showAfter} beforeContent={"before:content-['About_me']"} beforeNum={"before:content-['0.1']"} num={"0.1"} content={"About me"}/>
-         <Image opacity={opacity} intersection={intersection}/>
-      <div className=''>
-        
+          <div className='w-full flex flex-col md:flex-col lg:flex-row'>
+          <Image opacity={opacity} intersection={intersection}/>
           <Content showContent={showContent}/>
-          <div className='w-[100%] m-auto flex flex-col gap-5 mt-10 mb-10'>
+      </div>
+      <div className='w-[100%] m-auto flex flex-col gap-5 mt-10 mb-10'>
           <Skills showContent={showContent} showAfter={showAfter}/>
           </div>
-          
-      </div>
     </section>
   )
 }
